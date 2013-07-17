@@ -1,0 +1,41 @@
+<resources>
+
+    <string name="title_activity_login">Sign in</string>
+
+    <!-- View Filpper -->
+    <string name="viewFlipper"></string>
+    
+    <!-- Language Layout -->
+    <string name="languageLayout"></string>
+    <string name="selectLanguage">Select Language</string>
+    <string name="arabicButton">العربيه</string>
+    <string name="englishButton">English</string>
+    
+    <!-- Action Layout -->
+    <string name="actionLayout"></string>
+    
+    <!-- login Layout -->
+    <string name="loginLayout"></string>
+    
+    <string name="LoginFormLayout"></string>
+    <string name="loginEmail"></string>
+    <string name="promptLoginEmail">Email</string>
+    <string name="actionSignInShort">Sign in short</string>
+    <string name="promptLoginPassword">Password</string>
+    <string name="signInButton">Sign In</string>
+    <string name="errorInvalidEmail">This email address is invalid</string>
+    <string name="errorInvalidPassword">This password is too short</string>
+    <string name="errorIncorrectPassword">This password is incorrect</string>
+    <string name="errorFieldRequired">This field is required</string>
+    <string name="requestPassButton">Request Password</string>
+    <string name="activateAccountButton">Activate Account</string>
+	    
+    <!-- Progress Layout -->
+    <string name="loginStatusMessage"></string>
+    
+    
+    
+    <string name="loginProgressSignIn">Signing in&#8230;</string>
+    
+
+</resources>

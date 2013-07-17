@@ -1,0 +1,96 @@
+<resources>
+
+    <!--
+        Base application theme, dependent on API level. This theme is replaced
+        by AppBaseTheme from res/values-vXX/styles.xml on newer devices.
+    -->
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <!-- Application theme. -->
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+    <!-- Green title and graphic buttons -->
+    <style name="GreenTitleBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/drawable_green_title</item>
+    </style>
+    <style name="LoginFormContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+    </style>
+    <!-- Iktissab Theme -->
+    <style name="headerBar" parent="android:Theme">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">@drawable/drawable_headerbg</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+    <style name="headerBarButton" parent="android:Theme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">28dp</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">@drawable/drawable_header_button</item>
+    </style>
+    <style name="GreenTitleBarText" parent="android:Theme">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical|center_horizontal|fill_horizontal|center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <!-- Footer Bar -->
+    <style name="footerBar">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:baselineAligned">true</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/drawable_footerbg</item>
+    </style>
+    <style name="footerBarButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <!-- profile button bar -->
+    <style name="profileBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/drawable_profile_contentbg</item>
+
+    </style>
+    <style name="profileBarButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">28dp</item>
+        <item name="android:minWidth">80dp</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+    <!-- colors -->
+    <color name="greenText">#267F5E</color>
+
+
+</resources>

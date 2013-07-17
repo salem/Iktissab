@@ -1,0 +1,27 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+   style="@style/profileBar" >
+
+    <ToggleButton
+        android:id="@+id/profileIdButton"
+        android:onClick="profileIdButtonClicked"
+        android:textOn="@string/profile_Id_button"
+        android:textOff="@string/profile_Id_button"
+        style="@style/profileBarButton"
+        />
+
+    <ToggleButton
+        android:id="@+id/profilePersonalButton"
+        style="@style/profileBarButton"        
+        android:onClick="profilePersonalButtonClicked"
+        android:textOn="@string/profile_personal_button"
+        android:textOff="@string/profile_personal_button"/>
+
+    <ToggleButton
+         android:id="@+id/profileHistoryButton"
+        android:textOn="@string/profile_history_button"
+        android:textOff="@string/profile_history_button"
+        android:onClick="profileHistoryButtonClicked"
+        style="@style/profileBarButton" />
+
+</LinearLayout>

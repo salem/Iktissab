@@ -1,0 +1,73 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    tools:context=".PersonalInfo" >
+
+    <LinearLayout style="@style/headerBar" >
+
+        <Button
+            android:id="@+id/signoutButton"
+            style="@style/headerBarButton"
+            android:onClick="backButtonClicked"
+            android:text="@string/signout" />
+
+        <TextView
+            android:id="@+id/titleTextView"
+            style="@style/GreenTitleBarText"
+            android:text="@string/personal_info_title" />
+
+        <Button
+            android:id="@+id/editPersonalInfoButton"
+            style="@style/headerBarButton"
+            android:onClick="editPersonalInfoButtonClicked"
+            android:text="@string/personal_info_edit_button" />
+    </LinearLayout>
+
+    <include
+        android:id="@+id/progressView"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        layout="@layout/layout_progress"
+        android:visibility="visible" />
+
+    <LinearLayout
+        android:id="@+id/contentLayout"
+        android:layout_width="fill_parent"
+        android:layout_height="0dp"
+        android:layout_weight="8"
+        android:gravity="center_horizontal"
+        android:orientation="vertical"
+        android:visibility="gone" >
+
+        <include layout="@layout/layout_profile_buttonbar" />
+        <!-- android:id="@+id/main" -->
+
+        <LinearLayout
+            android:layout_width="fill_parent"
+            android:layout_height="wrap_content"
+            android:layout_marginBottom="10dp"
+            android:layout_marginLeft="20dp"
+            android:layout_marginRight="20dp"
+            android:layout_marginTop="10dp"
+            android:background="@drawable/drawable_profile_contentbg"
+            android:orientation="vertical"
+            android:paddingBottom="10dp" >
+
+            <ListView
+                android:id="@+id/userInfoList"
+                android:layout_width="fill_parent"
+                android:layout_height="wrap_content" >
+            </ListView>
+        </LinearLayout>
+    </LinearLayout>
+
+    <!-- footer -->
+
+    <include
+        android:layout_height="match_parent"
+        layout="@layout/layout_iktissab_footer" />
+
+</LinearLayout>

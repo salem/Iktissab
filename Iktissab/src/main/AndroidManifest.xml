@@ -1,0 +1,79 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="othaim.iktissab"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="9"
+        android:targetSdkVersion="16" />
+
+    <uses-permission android:name="android.permission.INTERNET" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:permission="android.permission.INTERNET"
+        android:theme="@style/AppTheme" >
+        <activity
+            android:name="othaim.iktissab.SplashScreenActivity"
+            android:configChanges="orientation|keyboardHidden|screenSize"
+            android:label="@string/title_activity_iktissab_splash"
+            android:theme="@style/FullscreenTheme" >
+            <intent-filter>
+                <action android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity
+            android:name="othaim.iktissab.ProfileActivity"
+            android:label="@string/title_activity_profile" >
+        </activity>
+        <activity
+                android:name="othaim.iktissab.LoginActivity"
+                android:label="LoginActivity">
+
+        </activity>
+        <activity
+            android:name="othaim.iktissab.PersonalInfo"
+            android:label="@string/personal_info_title" >
+        </activity>
+        <activity
+            android:name="othaim.iktissab.ProfileHistory"
+            android:label="@string/personal_info_title"
+            android:theme="@style/FullscreenTheme" >
+        </activity>
+        <activity
+            android:name="othaim.iktissab.LastuseDetail"
+            android:label="@string/personal_info_last_use_detail"
+            android:theme="@style/FullscreenTheme" >
+        </activity>
+        <activity
+            android:name="othaim.iktissab.SendPassword"
+            android:label="@string/personal_info_send_password" >
+        </activity>
+        <activity
+            android:name="othaim.iktissab.MainActivity"
+            android:label="@string/title_activity_main" >
+        </activity>
+        <activity
+            android:name="othaim.iktissab.OfferActivity"
+            android:label="@string/title_activity_offer" >
+        </activity>
+        <activity
+            android:name="othaim.iktissab.BranchActivity"
+            android:label="@string/title_activity_branch" >
+        </activity>
+        <activity
+            android:name="othaim.iktissab.CardActivity"
+            android:label="@string/title_activity_card" >
+        </activity>
+        <activity
+            android:name="othaim.iktissab.MoreActivity"
+            android:label="@string/title_activity_more" >
+        </activity>
+    </application>
+
+</manifest>

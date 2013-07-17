@@ -1,0 +1,37 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    style="@style/footerBar"
+     >
+
+	    <Button
+	        android:id="@+id/offersButton"
+	        android:onClick="offersButtonClicked"
+	        android:text="@string/offersButton"
+	        style="@style/footerBarButton" />
+
+	    <Button
+	        android:id="@+id/profileButton"
+	        android:text="@string/profileButton"
+	        android:onClick="profileButtonClicked"
+	        style="@style/footerBarButton" />
+
+	    <Button
+	        android:id="@+id/storeButton"
+	        android:text="@string/storeButton"
+	        android:onClick="storeButtonClicked"
+	        style="@style/footerBarButton" />
+
+	    <Button
+	        android:id="@+id/cardButton"
+	        android:text="@string/cardButton"
+	        android:onClick="cardButtonClicked"
+	        style="@style/footerBarButton" />
+
+	    <Button
+	        android:id="@+id/moreButton"
+	        android:text="@string/moreButton"
+	        android:onClick="moreButtonClicked"
+	        style="@style/footerBarButton" />
+
+
+</LinearLayout>

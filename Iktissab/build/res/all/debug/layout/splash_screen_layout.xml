@@ -1,0 +1,15 @@
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="#ffffff"
+    tools:context=".SplashScreenActivity" >
+
+    <ImageView android:id="@+id/fullscreen_content"
+        android:contentDescription="@string/o_splash_screen"
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:src="@drawable/o_splash_screen"
+         />
+
+</FrameLayout>

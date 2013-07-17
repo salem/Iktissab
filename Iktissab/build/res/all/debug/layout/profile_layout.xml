@@ -1,0 +1,107 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="fill_parent"
+    android:layout_height="fill_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    android:background="@drawable/drawable_profile_contentbg"
+    tools:context=".ProfileActivity" >
+
+
+    <LinearLayout style="@style/GreenTitleBar" >
+        <Button
+            android:id="@+id/signoutButton"
+            style="@style/headerBarButton"                       
+            android:onClick="backButtonClicked"
+            android:text="@string/signout" />
+
+        <TextView
+            android:id="@+id/titleTextView"                      
+            android:text="@string/profile_title"
+            style="@style/GreenTitleBarText" />
+
+        <Button
+            android:id="@+id/lastuseButton"
+            style="@style/headerBarButton"
+            android:onClick="lastuseButtonClicked"
+            android:text="@string/profile_last_use_button" />
+        <Button
+                android:id="@+id/editButton"
+                style="@style/headerBarButton"
+                android:text="@string/profile_edit_me_button"
+                android:visibility="gone"/>
+
+    </LinearLayout>
+
+          <!--<include-->
+            <!--layout="@layout/layout_profile_buttonbar" />-->
+        <othaim.iktissab.component.ToggleGroup
+                android:id="@+id/toggleBar"
+                android:orientation="horizontal"
+                style="@style/profileBar" >
+            <ToggleButton android:id="@+id/idButton"
+                    android:onClick="idButtonClick"
+                    android:textOn="@string/profile_Id_button"
+                    android:textOff="@string/profile_Id_button"
+                    style="@style/profileBarButton"/>
+
+            <ToggleButton android:id="@+id/meButton"
+                    style="@style/profileBarButton"
+                    android:onClick="profilePersonalButtonClicked"
+                    android:textOn="@string/profile_personal_button"
+                    android:textOff="@string/profile_personal_button"/>
+
+            <ToggleButton android:id="@+id/historyButton"
+                    android:textOn="@string/profile_history_button"
+                    android:textOff="@string/profile_history_button"
+                    android:onClick="profileHistoryButtonClicked"
+                    style="@style/profileBarButton"/>
+
+        </othaim.iktissab.component.ToggleGroup>
+<!--             android:id="@+id/main" -->
+    <include layout="@layout/layout_progress"
+             android:id="@+id/progressView"
+             android:layout_width="fill_parent"
+             android:layout_height="0dp"
+             android:layout_weight="8"
+             android:visibility="gone"/>
+        <FrameLayout android:id="@+id/contentLayout"
+                android:layout_width="fill_parent"
+                android:layout_height="fill_parent">
+            <ListView android:id="@+id/idList"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginBottom="10dp"
+                      android:layout_marginLeft="20dp"
+                      android:layout_marginRight="20dp"
+                      android:layout_marginTop="10dp"
+                      android:orientation="vertical"
+                      android:paddingBottom="10dp" >
+            </ListView>
+            <ListView android:id="@+id/meList"
+                      android:layout_width="fill_parent"
+                      android:layout_height="wrap_content"
+                      android:layout_marginBottom="10dp"
+                      android:layout_marginLeft="20dp"
+                      android:layout_marginRight="20dp"
+                      android:layout_marginTop="10dp"
+                      android:orientation="vertical"
+                      android:paddingBottom="10dp"
+                      android:visibility="gone">
+            </ListView>
+            <ListView android:id="@+id/historyList"
+                  android:layout_width="fill_parent"
+                  android:layout_height="wrap_content"
+                  android:layout_marginBottom="10dp"
+                  android:layout_marginLeft="20dp"
+                  android:layout_marginRight="20dp"
+                  android:layout_marginTop="10dp"
+                  android:orientation="vertical"
+                  android:paddingBottom="10dp"
+                  android:visibility="gone">
+        </ListView>
+        </FrameLayout>
+
+    <!-- footer -->
+
+</LinearLayout>

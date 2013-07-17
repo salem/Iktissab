@@ -1,0 +1,167 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <color name="black_overlay">#66000000</color>
+    <color name="greenText">#267F5E</color>
+
+    <declare-styleable name="ButtonBarContainerTheme">
+        <attr name="buttonBarStyle" format="reference" />
+        <attr name="buttonBarButtonStyle" format="reference" />
+    </declare-styleable>
+
+    <dimen name="activity_horizontal_margin">16dp</dimen>
+    <dimen name="activity_vertical_margin">16dp</dimen>
+
+    <string name="LoginFormLayout"></string>
+    <string name="actionLayout"></string>
+    <string name="actionSignInShort">Sign in short</string>
+    <string name="action_settings">Settings</string>
+    <string name="activateAccountButton">Activate Account</string>
+    <string name="app_name">Iktissab</string>
+    <string name="arabicButton">العربيه</string>
+    <string name="branch_nearest_store_button">Nearest Store</string>
+    <string name="branch_title">Cities</string>
+    <string name="btn_english">English</string>
+    <string name="cardButton">Card</string>
+    <string name="card_missing_button">Missing</string>
+    <string name="card_title">Card</string>
+    <string name="englishButton">English</string>
+    <string name="errorFieldRequired">This field is required</string>
+    <string name="errorIncorrectPassword">This password is incorrect</string>
+    <string name="errorInvalidEmail">This email address is invalid</string>
+    <string name="errorInvalidPassword">This password is too short</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="lang_layout"></string>
+    <string name="languageLayout"></string>
+    <string name="loginEmail"></string>
+    <string name="loginLayout"></string>
+    <string name="loginProgressSignIn">Signing in…</string>
+    <string name="loginStatusMessage"></string>
+    <string name="menu_settings">Settings</string>
+    <string name="moreButton">More</string>
+    <string name="o_splash_screen"></string>
+    <string name="offer_title">Offers</string>
+    <string name="offersButton">Offers</string>
+    <string name="personal_info_edit_button">Edit</string>
+    <string name="personal_info_last_use_detail">Last use Detail</string>
+    <string name="personal_info_send_password">Send Password</string>
+    <string name="personal_info_title">ProfileHistory</string>
+    <string name="profileButton">Profile</string>
+    <string name="profile_Id_button">ID</string>
+    <string name="profile_edit_me_button">Edit</string>
+    <string name="profile_history_button">History</string>
+    <string name="profile_last_use_button">Last use</string>
+    <string name="profile_personal_button">Me</string>
+    <string name="profile_personal_info">Personal Info</string>
+    <string name="profile_title">Profile</string>
+    <string name="promptLoginEmail">Email</string>
+    <string name="promptLoginPassword">Password</string>
+    <string name="requestPassButton">Request Password</string>
+    <string name="selectLanguage">Select Language</string>
+    <string name="select_language">Select Language</string>
+    <string name="sendPasswordButton">Send</string>
+    <string name="signInButton">Sign In</string>
+    <string name="signout">Signout</string>
+    <string name="storeButton">Store</string>
+    <string name="title_activity_branch">Branch</string>
+    <string name="title_activity_card">Card</string>
+    <string name="title_activity_iktissab_splash">Welcome To Iktissab</string>
+    <string name="title_activity_login">Sign in</string>
+    <string name="title_activity_main">MainActivity</string>
+    <string name="title_activity_more">MoreActivity</string>
+    <string name="title_activity_offer">OfferActivity</string>
+    <string name="title_activity_profile">ProfileActivity</string>
+    <string name="title_section1">Section 1</string>
+    <string name="title_section2">Section 2</string>
+    <string name="title_section3">Section 3</string>
+    <string name="viewFlipper"></string>
+    <string name="view_flipper"></string>
+
+    <style name="AppBaseTheme" parent="android:Theme.Light">
+        <!--
+            Theme customizations available in newer API levels can go in
+            res/values-vXX/styles.xml, while customizations related to
+            backward-compatibility can go here.
+        -->
+    </style>
+
+    <style name="AppTheme" parent="AppBaseTheme">
+        <!-- All customizations that are NOT specific to a particular API-level can go here. -->
+    </style>
+
+    <style name="GreenTitleBar">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/drawable_green_title</item>
+    </style>
+
+    <style name="GreenTitleBarText" parent="android:Theme">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceMedium</item>
+        <item name="android:layout_width">0dp</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:layout_gravity">center_vertical|center_horizontal|fill_horizontal|center</item>
+        <item name="android:gravity">center</item>
+        <item name="android:layout_marginLeft">5dp</item>
+        <item name="android:layout_marginRight">5dp</item>
+        <item name="android:layout_weight">1</item>
+    </style>
+
+    <style name="LoginFormContainer">
+        <item name="android:layout_width">match_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:padding">16dp</item>
+    </style>
+
+    <style name="footerBar">
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:baselineAligned">true</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/drawable_footerbg</item>
+    </style>
+
+    <style name="footerBarButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:textSize">10sp</item>
+    </style>
+
+    <style name="headerBar" parent="android:Theme">
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">@drawable/drawable_headerbg</item>
+        <item name="android:layout_width">fill_parent</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:orientation">horizontal</item>
+    </style>
+
+    <style name="headerBarButton" parent="android:Theme">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">28dp</item>
+        <item name="android:layout_margin">10dp</item>
+        <item name="android:gravity">center_vertical|center_horizontal</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+        <item name="android:textColor">#ffffff</item>
+        <item name="android:background">@drawable/drawable_header_button</item>
+    </style>
+
+    <style name="profileBar">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:gravity">center</item>
+        <item name="android:orientation">horizontal</item>
+        <item name="android:background">@drawable/drawable_profile_contentbg</item>
+    </style>
+
+    <style name="profileBarButton">
+        <item name="android:layout_width">wrap_content</item>
+        <item name="android:layout_height">wrap_content</item>
+        <item name="android:minHeight">28dp</item>
+        <item name="android:minWidth">80dp</item>
+        <item name="android:textAppearance">?android:attr/textAppearanceSmall</item>
+    </style>
+
+</resources>

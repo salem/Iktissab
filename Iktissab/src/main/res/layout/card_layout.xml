@@ -1,0 +1,30 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+        xmlns:tools="http://schemas.android.com/tools"
+        android:layout_width="fill_parent"
+        android:layout_height="fill_parent"
+        android:orientation="vertical"
+    tools:context=".CardActivity">
+
+    <LinearLayout style="@style/GreenTitleBar" >
+
+        <TextView
+                android:id="@+id/titleTextView"
+                android:text="@string/card_title"
+                style="@style/GreenTitleBarText" />
+
+        <Button
+                android:id="@+id/nearestStore"
+                style="@style/headerBarButton"
+                android:text="@string/card_missing_button" />
+
+    </LinearLayout>
+
+    <include layout="@layout/layout_progress"
+             android:id="@+id/progressView"
+             android:layout_width="fill_parent"
+             android:layout_height="0dp"
+             android:layout_weight="8"
+             android:visibility="visible"/>
+
+
+</LinearLayout>
