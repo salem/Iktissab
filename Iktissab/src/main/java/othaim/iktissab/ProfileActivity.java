@@ -185,7 +185,7 @@ public class ProfileActivity extends NotificationActivity {
             LabelValue houseno = new LabelValue("House #:", userInfo.getString("houseno")) ;
             LabelValue pobox = new LabelValue("Post Box:", userInfo.getString("pobox")) ;
             LabelValue zip = new LabelValue("Zip:", userInfo.getString("zip") ) ;
-            LabelValue city_no = new LabelValue("City #", userInfo.getString("cityno")) ;
+            LabelValue city_no = new LabelValue("City #", userInfo.getString("city_no")) ;
             LabelValue tel_home = new LabelValue("Phone(Home):", userInfo.getString("tel_home")) ;
             LabelValue tel_office = new LabelValue("Phone(Office):", userInfo.getString("tel_office")) ;
             LabelValue mobile = new LabelValue("Mobile", userInfo.getString("mobile")) ;
@@ -193,7 +193,7 @@ public class ProfileActivity extends NotificationActivity {
             LabelValue marital_status = new LabelValue("Martial Status:", userInfo.getString("marital_status")) ;
             LabelValue id_no = new LabelValue("SSID/Iqama:", userInfo.getString("id_no")) ;
             LabelValue job_no = new LabelValue("Job #:", userInfo.getString("job_no")) ;
-            LabelValue lang = new LabelValue("Language:", userInfo.getString("language")) ;
+            LabelValue lang = new LabelValue("Language:", userInfo.getString("lang")) ;
             LabelValue gender = new LabelValue("Gender", userInfo.getString("gender")) ;
             //LabelValue pur_grp = new LabelValue("") ;
             LabelValue cust_status = new LabelValue("Customer Status:", userInfo.getString("cust_status")) ;
